@@ -1,0 +1,5 @@
+step,series,observations,dropped
+aggregated to daily,12,34825,0
+keep only complete UTC days (288 bars),12,34505,320
+drop zero-variance days,12,34505,0
+drop series with < 1000 observations,12,34505,0

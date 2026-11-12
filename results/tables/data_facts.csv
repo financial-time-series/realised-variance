@@ -1,0 +1,11 @@
+fact,value
+eq_overnight_share_median,0.3379322577315749
+eq_gk_over_cc_median,0.6875044547394215
+eq_raw_rows,398238.0
+eq_complete_history_rows,6684.0
+eq_shortfall_per_series,155.50819672131183
+eq_rs_zero_days,1353.0
+eq_rs_zero_share,0.0034034139789003424
+eq_rs_tiny_days,94.0
+eq_rs_tiny_share,0.00023645300370778434
+vix_days,6969.0

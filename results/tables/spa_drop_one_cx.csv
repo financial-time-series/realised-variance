@@ -1,0 +1,3 @@
+dataset,window,h,loss,set,n_origins,benchmark,pvalue_consistent,pvalue_lower,pvalue_upper,n_alternatives,best_alternative,worst_day_of_dropped,worst_day_share_of_sum
+cx,frontier,1,qlike,original,251,har-log,0.467,0.179,0.892,63,timesfm-2.5[log]+cal,2026-01-16,1.0181106532090618
+cx,frontier,1,qlike,original without moirai-moe-base[raw],251,har-log,0.193,0.146,0.842,61,timesfm-2.5[log]+cal,2026-01-16,1.0181106532090618

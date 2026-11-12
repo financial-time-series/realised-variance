@@ -1,0 +1,8 @@
+step,series,observations,dropped
+downloaded,61,398238,0
+drop rows with missing OHLC,61,398238,0
+drop non-positive prices,61,398238,0
+drop internally inconsistent bars,61,397605,633
+drop first day (no return) and NaN estimates,61,397544,61
+drop non-positive variance estimates,61,397542,2
+drop series with < 2000 observations,61,397542,0

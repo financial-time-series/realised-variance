@@ -1,0 +1,45 @@
+run,family,variant,rv_col,device,gpu,cpu_model,seed,model,seconds,minutes,n_contexts,ms_per_context
+eq-chronos-2-log,tsfm,log,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,chronos-2,168.81,2.81,252810.0,0.668
+eq-chronos-2-raw,tsfm,raw,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,chronos-2,167.03,2.78,252810.0,0.661
+eq-chronos-bolt-base-log,tsfm,log,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,chronos-bolt-base,130.12,2.17,252810.0,0.515
+eq-chronos-bolt-base-raw,tsfm,raw,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,chronos-bolt-base,124.29,2.07,252810.0,0.492
+eq-chronos-bolt-small-log,tsfm,log,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,chronos-bolt-small,59.84,1.0,252810.0,0.237
+eq-chronos-bolt-small-raw,tsfm,raw,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,chronos-bolt-small,53.79,0.9,252810.0,0.213
+eq-chronos-t5-base-log,tsfm,log,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,chronos-t5-base,4781.61,79.69,252810.0,18.914
+eq-chronos-t5-base-raw,tsfm,raw,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,chronos-t5-base,4796.86,79.95,252810.0,18.974
+eq-classical,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,rw,4.02,0.07,,
+eq-classical,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,mean,7.33,0.12,,
+eq-classical,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,ewma,4.42,0.07,,
+eq-classical,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,har,19.7,0.33,,
+eq-classical,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,har-log,24.07,0.4,,
+eq-classical,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,har-sqrt,20.8,0.35,,
+eq-classical,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,har-log-roll,18.95,0.32,,
+eq-classical,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,har-log-iv,25.61,0.43,,
+eq-dlinear-s1,deep,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,1.0,dlinear,432.26,7.2,,
+eq-dlinear-s2,deep,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,2.0,dlinear,391.14,6.52,,
+eq-dlinear-s3,deep,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,3.0,dlinear,437.42,7.29,,
+eq-egarch,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,egarch,14278.64,237.98,,
+eq-garch,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,garch,2515.85,41.93,,
+eq-garch-oc,classical,,rv,cpu,,AMD EPYC 7763 64-Core Processor,,garch-oc,2516.04,41.93,,
+eq-lightgbm,ml,,rv,cpu,,AMD EPYC 7763 64-Core Processor,1.0,lightgbm,738.7,12.31,,
+eq-lstm-hybrid-s1,hybrid,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,1.0,lstm-hybrid,84.08,1.4,,
+eq-lstm-hybrid-s2,hybrid,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,2.0,lstm-hybrid,86.79,1.45,,
+eq-lstm-hybrid-s3,hybrid,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,3.0,lstm-hybrid,84.94,1.42,,
+eq-moirai-1.1-base-log,tsfm,log,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,moirai-1.1-base,208.47,3.47,252810.0,0.825
+eq-moirai-1.1-base-raw,tsfm,raw,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,moirai-1.1-base,203.63,3.39,252810.0,0.805
+eq-moirai-2.0-log,tsfm,log,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,moirai-2.0,69.24,1.15,252810.0,0.274
+eq-moirai-2.0-raw,tsfm,raw,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,moirai-2.0,64.65,1.08,252810.0,0.256
+eq-moirai-moe-base-log,tsfm,log,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,moirai-moe-base,6391.38,106.52,252810.0,25.281
+eq-moirai-moe-base-raw,tsfm,raw,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,moirai-moe-base,6423.61,107.06,252810.0,25.409
+eq-nhits-s1,deep,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,1.0,nhits,526.74,8.78,,
+eq-nhits-s2,deep,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,2.0,nhits,489.39,8.16,,
+eq-nhits-s3,deep,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,3.0,nhits,481.64,8.03,,
+eq-patchtst-s1,deep,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,1.0,patchtst,529.19,8.82,,
+eq-patchtst-s2,deep,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,2.0,patchtst,540.98,9.02,,
+eq-patchtst-s3,deep,,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,3.0,patchtst,527.13,8.79,,
+eq-randomforest,ml,,rv,cpu,,AMD EPYC 7763 64-Core Processor,1.0,randomforest,6759.26,112.65,,
+eq-ridge,ml,,rv,cpu,,AMD EPYC 7763 64-Core Processor,1.0,ridge,26.5,0.44,,
+eq-timesfm-2.5-log,tsfm,log,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,timesfm-2.5,28423.63,473.73,252810.0,112.431
+eq-timesfm-2.5-raw,tsfm,raw,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7763 64-Core Processor,,timesfm-2.5,29133.13,485.55,252810.0,115.237
+eq-ttm-r2-log,tsfm,log,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,ttm-r2,11.0,0.18,252810.0,0.044
+eq-ttm-r2-raw,tsfm,raw,rv,cuda,NVIDIA A100-SXM4-40GB,AMD EPYC 7513 32-Core Processor,,ttm-r2,9.26,0.15,252810.0,0.037

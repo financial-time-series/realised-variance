@@ -1,0 +1,45 @@
+[project]
+name = "finlab"
+version = "0.1.0"
+description = "Research campaigns on public financial data"
+requires-python = ">=3.11,<3.12"
+
+dependencies = [
+    # data
+    "pandas>=2.2",
+    "numpy>=1.26,<2.2",
+    "pyarrow>=16",
+    # public data access (all free, no credentials)
+    "yfinance>=0.2.40",        # equity/ETF/FX/crypto OHLCV
+    "pandas-datareader>=0.10", # FRED, Fama-French, Stooq
+    # modelling
+    "scikit-learn>=1.5",
+    "statsmodels>=0.14",
+    "scipy>=1.13",
+    "lightgbm>=4.3",
+    "arch>=7.2",               # GARCH / EGARCH, and the Model Confidence Set
+    # deep learning -- the exact build is forced by slurm/setup_remote.sh
+    "torch>=2.8,<2.9",
+    # utilities
+    "requests>=2.32",
+    "tqdm>=4.66",
+]
+
+# Deliberately NOT declared here: neuralforecast, chronos-forecasting, timesfm,
+# uni2ts, granite-tsfm. Each pulls its own torch constraint, and letting them
+# into uv.lock lets the resolver overrule the cu126 pin. They are installed by
+# slurm/setup_remote.sh as EXTRA_PACKAGES, and the pin is re-applied after
+# them, so whatever torch they drag in is replaced before any job runs.
+
+[tool.uv]
+# The cluster runs two driver generations at once (560 on P5000, 590 on A100).
+# setup_remote.sh force-installs a cu126 wheel after `uv sync` so one venv is
+# schedulable on every GPU partition -- see cluster.local.md.
+override-dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/finlab"]
